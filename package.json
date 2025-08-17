@@ -1,0 +1,35 @@
+{
+  "name": "interest-bot-backend",
+  "version": "1.0.0",
+  "main": "index.js",
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "@ai-sdk/openai": "^1.3.23",
+    "@mastra/core": "^0.10.15",
+    "@types/cors": "^2.8.19",
+    "@types/puppeteer": "^5.4.7",
+    "cors": "^2.8.5",
+    "dotenv": "^17.2.0",
+    "express": "^5.1.0",
+    "mastra": "^0.10.13",
+    "mongoose": "^8.16.3",
+    "puppeteer": "^24.14.0",
+    "zod": "^3.25.76"
+  },
+  "devDependencies": {
+    "@types/express": "^5.0.3",
+    "@types/node": "^24.0.15",
+    "ts-node": "^10.9.2",
+    "tsx": "^4.20.3",
+    "typescript": "^5.8.3"
+  },
+  "scripts": {
+    "twitter:login": "ts-node src/test/logintest.ts",
+    "dev": "tsx watch src/index.ts",
+    "analyze": "ts-node src/mastra/analyze.ts",
+    "start:full": "ts-node src/scripts/fullrun.ts"
+  }
+}
